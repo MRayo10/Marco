@@ -21,7 +21,7 @@ const config = {
             display: true,
             centerPointLabels: true,
             font: {
-              size: 18
+              size: 30
             }
           }
         }
