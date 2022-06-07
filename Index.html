@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Sucess Wheel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    
+   
+</head>
+    <body>
+        <!--Navbar Section -->
+        <nav class="navbar">
+            
+            <div class="navbar__container">
+                <img src="HLP.2.png" height= 68px>
+                <a href="#Home" id="navbar__logo">Hacienda La Puente</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    
+                </div>   
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#menu" class="navbar__links" id="home-page">Menu</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#Agency" class="navbar__links" id="home-page">Agency</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#Courage" class="navbar__links" id="home-page">Courage</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#Ethics" class="navbar__links" id="home-page">Ethics</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#College" class="navbar__links" id="home-page">College </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#Global Impact" class="navbar__links" id="home-page">Global Impact</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="#Sign-up" class="button" id="#Sign-up">Sign-up</a>
+                    </li>
+                </ul> 
+            </div> 
+        </nav>
+        <!-- Hero Section -->
+        <div class="hero" id="home">
+            <div class="hero__container">
+                <h1 class="hero__heading">Judy's Personal Learning and Action<span> Plan</span></h1>
+                <p class="hero__description">The Six C's</p> 
+                <button class="main__btn"><a href='Explore'></a></button>
+            </div>
+        </div>
+        
+    </body>
+    <body>
+
+        <div class = "row">
+            <div class="col">
+                <div class="leftside">
+                    <div class="container" >
+                        
+                         <canvas id="mychart" ></canvas> 
+                        
+                    </div>
+                    <script>
+    
+                        let mychart = document.getElementById ('mychart').getContext('2d');
+
+                        let masspopchart = new Chart(mychart,{
+                            type: 'polarArea',
+                            data:{
+                                labels: ['Character','Citizenship','Creativity','Communication','Critical Thinking','Collaboration' ],
+                                datasets: [{
+                                    label: 'Deep learning',
+                                    data: [
+                                        77, 
+                                        93,
+                                        29,
+                                        32,
+                                        32,
+                                        59
+                                    ],
+                                    backgroundColor: [
+                                        'rgba(255, 99, 132)',
+                                        'blue',
+                                        'rgba(255, 206, 86)',
+                                        'rgba(75, 192, 192)',
+                                        'rgba(153, 102, 255)',
+                                        'rgba(255, 159, 64)'
+        ],
+                                    hoverBorderColor:[
+                                        'black',
+                                        'black',
+                                        'black',
+                                        'black',
+                                        'black',
+                                        'black'
+                                    ],
+                                    hoverBorderWidth:[
+                                        '3',
+                                    ],
+                
+                                    borderWidth: 3
+                                    
+                                }]
+                            },
+                            options:{
+                            }
+                            
+                        });
+    
+                        </script>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="rightside">
+                    <div id="part0" class="scrollpart">
+                        <div id="part1" class="scrollpart"></div><h3>1.Character</h3>
+                        <ul style="list-style-type:square">
+                            <li>Learning to learn</li>
+                            <li>Grit, tenancity, perseverance, and resilience</li>
+                            <li>Self-regulation, responsibility, and integriy</li>
+                        </ul>
+                        
+                        <div id="part2" class="scrollpart"></div><h3>2.Citizenship</h3>
+                        <ul style="list-style-type:square">
+                            <li>Thinking like global citizens</li>
+                            <li>Considering global issues based on a deep understanding of diverse values and worldviews</li>
+                            <li>Genuine interest and ability to solve ambiguous and complex real-world problems that impact human and enironmental sustainability</li>
+                            <li>Compassion, empathy, and concern for others</li>
+                        </ul>
+                        <div id="part3" class="scrollpart"></div><h3>3.Creativity</h3>
+                        <ul style="list-style-type:square">
+                            <li>Working interdependently and synergistically in teams</li>
+                            <li>Interpersonal and team-related skills</li>
+                            <li>Social, Emotional, and intercultural skills</li>
+                        </ul>
+                        <div id="part4" class="scrollpart"></div><h3>4.Communication</h3>
+                        <ul style="list-style-type:square">
+                            <li>Communicating effectively with a variety of styles, models, and tools including digital.</li>
+                            <li>Communication designed for different audiences</li>
+                            <li>Reflection on and use of the process of learning to improve communcation</li>
+                        </ul>
+                        <div id="part5" class="scrollpart"></div><h3>5.Critical Thinking</h3>
+                        <ul style="list-style-type:square">
+                            <li>Havng an "entrepreneurial eye" for economic and social opportunities.</li>
+                            <li>Asking the right inquiry questions</li>
+                            <li>Considering and pursuing novel ideas and solutions</li>
+                            <li>Leadership to turn ideas into action</li>
+                        </ul>
+                        <div id="part6" class="scrollpart"></div><h3>6.Collaboration</h3>
+                        <ul style="list-style-type:square">
+                            <li>Evaluating information and arguments</li>
+                            <li>Making connections and identifying patterns</li>
+                            <li>Problem Solving</li>
+                            <li>Constructing meaningful knowledge</li>
+                            <li>Experimenting, reflecting, and taking action on ideas in the real world</li>
+                        </ul>
+                    </div>
+                </div>       
+            </div>
+            <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
